@@ -31,5 +31,5 @@ composer update lcinhk/flarum-ext-acgembed
 ```
 
 ### Links
-
+Inspired by [flarum-bbcode-bilibili](https://github.com/pluveto/flarum-bbcode-bilibili)
 - [Packagist](https://packagist.org/packages/lcinhk/flarum-ext-acgembed)
