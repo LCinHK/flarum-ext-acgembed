@@ -19,7 +19,7 @@ A [Flarum](http://flarum.org) extension. Add acfun.cn and bilibili.com in mediae
 ![视频演示.gif](https://i.loli.net/2020/02/11/NiyHw7TUCRBIPgn.gif)
 ### Installation
 
-Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually with composer:
+composer:
 
 ```sh
 composer require lcinhk/flarum-ext-acgembed
