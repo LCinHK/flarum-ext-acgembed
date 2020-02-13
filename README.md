@@ -12,9 +12,10 @@ A [Flarum](http://flarum.org) extension. Add acfun.cn and bilibili.com in mediae
 ```
 以https://b23.tv/av12450（如需发分p的第3p，请在av号后面加/p3）
 或https://www.bilibili.com/video/av12450（如需发分p的第3p，请在av号后面加?p=3）
-或https://acg.tv/av12450
-来发bilibili视频（如需发分p的第3p，请在av号后面加?p=3）
+或https://acg.tv/av12450 （如需发分p的第3p，请在av号后面加?p=3）
+来发bilibili视频
 ```
+注：教程以ac12809987和av12450为例，请换成具体要发视频的ac/av号
 ![视频演示.gif](https://i.loli.net/2020/02/11/NiyHw7TUCRBIPgn.gif)
 ### Installation
 
