@@ -21,16 +21,19 @@ Or as  https://acg.tv/av12450 (For page3, add a ?p=3 after /av12450)
 来发bilibili视频
 to post bilibili videos
 ```
-注：教程以ac12809987和av12450为例，请换成具体要发视频的ac/av号
+注：教程以ac12809987和av12450为例，请换成具体要发视频的ac/av号  
 PS: Remember to replace ac12809987 and av12450 into the ac/av id that you are posting
 ![IMGUR图片](https://imgur.com/SCYqKOT.gif)
 ## v0.2↓
 ### Netease cloud music (网易云音乐)
-```
-直接用分享出来的链接发即可
+直接用分享出来的链接发即可  
 Just use the link.
+```
 https://music.163.com/#/song?id=1304754139
 ```
+![image.png](https://i.loli.net/2020/02/23/OebL9lnymQJjqGg.png)
+## v0.2↑
+
 ### Installation
 ```sh
 composer require lcinhk/flarum-ext-acgembed
