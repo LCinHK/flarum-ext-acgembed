@@ -20,7 +20,7 @@ return [
                 'music163',
                 [
                     'host'    => 'music.163.com',
-                    'extract' => '!music\\.163\\.com/#/(?\'mode\'song|album|playlist)\\?id=(?\'id\'\\d+)!',
+                    'extract' => '!music\\.163\\.com/(#/)?(?\'mode\'song|album|playlist)((\\?id=)|(\\/))(?\'id\'\\d+)!',
                     'choose'  => [
                         'when' => [
                             [
