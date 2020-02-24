@@ -42,6 +42,11 @@ composer require lcinhk/flarum-ext-acgembed
 ```sh
 composer update lcinhk/flarum-ext-acgembed
 ```
+### Donate
+- Donate from Mainland China  
+![云闪付/京东支付/AlipayHK/支付宝/微信](https://i.loli.net/2020/02/16/psaBu6RIWlfLvY7.png)
+- Donate from HKSAR  
+![FPS(轉數快)](https://i.loli.net/2020/02/24/TrR8ZY2VsthAmUl.png)
 ### Links
 Inspired by [flarum-bbcode-bilibili](https://github.com/pluveto/flarum-bbcode-bilibili) and [flarum-ext-mediaembed-pro](https://github.com/FlarumChina/flarum-ext-mediaembed-pro)
 - [Packagist](https://packagist.org/packages/lcinhk/flarum-ext-acgembed)
