@@ -5,7 +5,7 @@
 
 A [Flarum](http://flarum.org) extension. Add [Niconico](https://www.nicovideo.jp)/[ACFUN](https://www.acfun.cn)/[Bilibili](https://www.bilibili.com) and [Netease cloud music](https://music.163.com) in mediaembed
 ## v0.1[ACFUN](https://www.acfun.cn) and [Bilibili](https://www.bilibili.com)↓
->!### ACFUN
+### ACFUN
 ```
 以https://www.acfun.cn/v/ac12809987 来发acfun视频（不支持分p）
 Post ACFUN videos as https://www.acfun.cn/v/ac12809987 (Multi pages are not supported)
@@ -26,7 +26,7 @@ https://imgur.com/SCYqKOT
 
 ## v0.1↑
 ## v0.2+[Netease cloud music (网易云音乐)](https://music.163.com)↓
->! 直接用分享出来的链接发即可  
+直接用分享出来的链接发即可  
 Just use the link.
 ```
 https://music.163.com/#/song?id=1304754139
@@ -34,8 +34,8 @@ https://music.163.com/#/song?id=1304754139
 ![image.png](https://i.loli.net/2020/02/23/OebL9lnymQJjqGg.png)
 
 ## v0.2↑
-## v0.3+ [Niconico](https://www.nicovideo.jp)↓ 
->! ```
+## v0.3+[Niconico](https://www.nicovideo.jp)↓ 
+```
 以https://nico.ms/sm8628149
 Post as https://nico.ms/sm8628149
 或https://www.nicovideo.jp/watch/sm8628149
