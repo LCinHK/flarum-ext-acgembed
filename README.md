@@ -1,9 +1,9 @@
-# v0.2
-### Acgembed
+# v0.3
+### Acgembed  
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/lcinhk/flarum-ext-acgembed.svg)](https://packagist.org/packages/lcinhk/flarum-ext-acgembed)
 
-A [Flarum](http://flarum.org) extension. Add acfun.cn/bilibili.com and netease cloud music in mediaembed
+A [Flarum](http://flarum.org) extension. Add nicovideo.jp/acfun.cn/bilibili.com and netease cloud music in mediaembed
 ### ACFUN
 ```
 以https://www.acfun.cn/v/ac12809987
@@ -31,10 +31,23 @@ Just use the link.
 ```
 https://music.163.com/#/song?id=1304754139
 ```
-![image.png](https://i.loli.net/2020/02/23/OebL9lnymQJjqGg.png)
-## v0.2↑
-
-### Installation
+![netease cloud music](https://i.loli.net/2020/02/23/OebL9lnymQJjqGg.png)
+## v0.2↑  
+## v0.3↓
+### Niconico
+```
+以https://nico.ms/sm8628149
+Post as https://nico.ms/sm8628149
+或https://www.nicovideo.jp/watch/sm8628149
+Or as https://www.nicovideo.jp/watch/sm8628149
+来发Niconico视频
+to post Niconico videos
+```
+注：教程以sm8628149为例，请换成具体要发视频的sm号  
+PS: Remember to replace sm8628149 into the smid that you are posting
+![niconico](https://i.loli.net/2020/03/07/TidMqfQLxIDGA7S.png)
+## v0.3↑  
+### Installation  
 ```sh
 composer require lcinhk/flarum-ext-acgembed
 ```
@@ -42,6 +55,8 @@ composer require lcinhk/flarum-ext-acgembed
 ```sh
 composer update lcinhk/flarum-ext-acgembed
 ```
+And clear the cache(`php flarum cache:clear` or clear from the admin panel)
+然后清除缓存(`php flarum cache:clear` 或从管理面板清除)
 ### Donate
 - Donate from Mainland China  
 ![云闪付/京东支付/AlipayHK/支付宝/微信](https://i.loli.net/2020/02/16/psaBu6RIWlfLvY7.png)

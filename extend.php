@@ -74,6 +74,19 @@ return [
 					]
 				]
 			);
+            $config->MediaEmbed->add(
+                'niconico',
+                [
+                    'host'	  => ['nicovideo.jp','nico.ms'],
+                    'extract' => [
+                        "!nicovideo\.jp/watch/sm(?'smid'[-0-9]+)!",
+                        "!nico\.ms/sm(?'smid'[-0-9]+)!",
+                    ],
+                    'iframe' => [
+                        'src'  => 'https://embed.nicovideo.jp/watch/sm{@smid}'
+                    ]
+                ]
+            );
              $config->BBCodes->addCustom(
                '[oneindex src={URL?}][/oneindex]',
                '<video preload="" controls="" width="100%"><source src="{URL}" type="video/mp4"></video>'
