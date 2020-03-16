@@ -48,7 +48,12 @@ PS: Remember to replace sm8628149 into the smid that you are posting
 ![niconico](https://i.loli.net/2020/03/07/TidMqfQLxIDGA7S.png)  
 
 ## v0.3↑ 
- 
+## v0.3.1+"acg.tv" enhanced for Niconico/ACFUN/Bilibili↓
+添加了"acg.tv"对Niconico/ACFUN/Bilibili的支持
+```
+Added http://acg.tv/sm8628149, http://acg.tv/ac12809987, http://acg.tv/av12450 
+```
+## v0.3.1↑
 ### Installation
 composer:
 
