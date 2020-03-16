@@ -56,18 +56,17 @@ return [
 					'host'	  => 'acfun.cn',
 					'extract' => "!acfun\.cn/v/ac(?'acid'[-0-9]+)!",
 					'iframe' => [
-						'src'  => 'https://www.acfun.cn/player/ac{@acid}'
+						'src'  => '//www.acfun.cn/player/ac{@acid}'
 					]
 				]
 			);
 			 $config->MediaEmbed->add(
 				'bilibili',
 				[
-					'host'	  => ['bilibili.com','b23.tv','acg.tv'],
+					'host'	  => ['bilibili.com','b23.tv',],
 					'extract' => [
 						"!bilibili\.com/video/av(?'aid'[-0-9]+)(\?p=(?'pn'[-0-9]+))?!",
-						"!acg\.tv/av(?'aid'[-0-9]+)(\?p=(?'pn'[-0-9]+))?!",
-						"!b23\.tv/av(?'aid'[-0-9]+)(/p(?'pn'[-0-9]+))?!"
+						"!b23\.tv/(/av(?'aid'[-0-9]+))|(/sm(?'smid'[-0-9]+))(/p(?'pn'[-0-9]+))?!"
 					],
 					'iframe' => [
 						'src'  => '//player.bilibili.com/player.html?aid={@aid}&page={@pn}'
@@ -83,7 +82,41 @@ return [
                         "!nico\.ms/sm(?'smid'[-0-9]+)!",
                     ],
                     'iframe' => [
-                        'src'  => 'https://embed.nicovideo.jp/watch/sm{@smid}'
+                        'src'  => '//embed.nicovideo.jp/watch/sm{@smid}'
+                    ]
+                ]
+            );
+            $config->MediaEmbed->add(
+                'acgtv',
+                [
+                    'host'    => 'acg.tv',
+                    'extract' => '!acg\\.tv/(?\'mode\'av|ac|sm)(?\'idhao\'\\d+)(\?p=(?\'pn\'[-0-9]+))?!',
+                    'choose'  => [
+                        'when' => [
+                            [
+                                'test' => '@mode = \'av\'',
+                                'iframe'  => [
+                                    'src'    => '//player.bilibili.com/player.html?aid={@idhao}'
+                                ]
+                            ],
+                            [
+                                'test' => '@mode = \'ac\'',
+                                'iframe'  => [
+                                    'src'    => '//www.acfun.cn/player/ac{@idhao}'
+                                ]
+                            ],
+                            [
+                                'test' => '@mode = \'sm\'',
+                                'iframe'  => [
+                                    'src'    => '//embed.nicovideo.jp/watch/sm{@idhao}'
+                                ]
+                            ],
+                        ],
+                        'otherwise' => [
+                            'iframe'  => [
+                                'src'    => '//acg.tv/{@idhao}'
+                            ]
+                        ]
                     ]
                 ]
             );
