@@ -64,13 +64,31 @@ return [
 				'bilibili',
 				[
 					'host'	  => ['bilibili.com','b23.tv',],
-					'extract' => [
-						"!bilibili\.com/video/av(?'aid'[-0-9]+)(\?p=(?'pn'[-0-9]+))?!",
-						"!b23\.tv/(/av(?'aid'[-0-9]+))|(/sm(?'smid'[-0-9]+))(/p(?'pn'[-0-9]+))?!"
-					],
-					'iframe' => [
-						'src'  => '//player.bilibili.com/player.html?aid={@aid}&page={@pn}'
-					]
+                    'extract' => [
+                    	'!bilibili\\.com/video/(?\'mode\'BV|av)(?\'idhao\'[-0-9A-Za-z]+)(\?p=(?\'pn\'[-0-9]+))?!',
+                    	'!b23\\.tv/(?\'mode\'BV|av)(?\'idhao\'[-0-9A-Za-z]+)(\?p=(?\'pn\'[-0-9]+))?!'
+                    ],
+                    'choose'  => [
+                        'when' => [
+                            [
+                                'test' => '@mode = \'BV\'',
+                                'iframe'  => [
+                                    'src'    => '//player.bilibili.com/player.html?bvid=BV{@idhao}&page={@pn}'
+                                ]
+                            ],
+                            [
+                                'test' => '@mode = \'av\'',
+                                'iframe'  => [
+                                    'src'    => '//player.bilibili.com/player.html?aid={@idhao}&page={@pn}'
+                                ]
+                            ],
+                        ],
+                        'otherwise' => [
+                            'iframe'  => [
+                                'src'    => '//player.bilibili.com/player.html?{@idhao}'
+                            ]
+                        ]
+                    ]
 				]
 			);
             $config->MediaEmbed->add(
