@@ -65,11 +65,12 @@ return [
 				[
 					'host'	  => ['bilibili.com','b23.tv',],
 					'extract' => [
+                                                "!bilibili\.com/video/BV(?'bvid'[-0-9A-Za-z]+)(\?p=(?'pn'[-0-9]+))?!",
 						"!bilibili\.com/video/av(?'aid'[-0-9]+)(\?p=(?'pn'[-0-9]+))?!",
 						"!b23\.tv/(/av(?'aid'[-0-9]+))|(/sm(?'smid'[-0-9]+))(/p(?'pn'[-0-9]+))?!"
 					],
 					'iframe' => [
-						'src'  => '//player.bilibili.com/player.html?aid={@aid}&page={@pn}'
+						'src'  => '//player.bilibili.com/player.html?aid={@aid}&bvid=BV{@bvid}&page={@pn}'
 					]
 				]
 			);
