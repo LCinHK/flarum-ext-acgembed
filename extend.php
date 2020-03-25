@@ -65,11 +65,11 @@ return [
 				[
 					'host'	  => ['bilibili.com','b23.tv',],
 					'extract' => [
-						"!bilibili\.com/video/av(?'aid'[-0-9]+)(\?p=(?'pn'[-0-9]+))?!",
-						"!b23\.tv/(/av(?'aid'[-0-9]+))|(/sm(?'smid'[-0-9]+))(/p(?'pn'[-0-9]+))?!"
+						"!bilibili\.com/video(/av(?'aid'[-0-9]+))|(/BV(?'bvid'[-0-9A-Z_a-z]+))(\?p=(?'pn'[-0-9]+))?!",
+						"!b23\.tv/(/av(?'aid'[-0-9]+))|(/BV(?'bvid'[-0-9A-Z_a-z]+))(/p(?'pn'[-0-9]+))?!"
 					],
 					'iframe' => [
-						'src'  => '//player.bilibili.com/player.html?aid={@aid}&page={@pn}'
+						'src'  => '//player.bilibili.com/player.html?aid={@aid}&bvid={@bvid}&page={@pn}'
 					]
 				]
 			);
@@ -83,6 +83,25 @@ return [
                     ],
                     'iframe' => [
                         'src'  => '//embed.nicovideo.jp/watch/sm{@smid}'
+                    ]
+                ]
+            );
+            $config->MediaEmbed->add(
+                'qq',
+                [
+                    'host'    => 'qq.com',
+                    'extract' => [
+                        "!qq\\.com/x/cover/\\w+/(?'id'\\w+)\\.html!",
+                        "!qq\\.com/x/cover/\\w+\\.html\\?vid=(?'id'\\w+)!",
+                        "!qq\\.com/cover/[^/]+/\\w+/(?'id'\\w+)\\.html!",
+                        "!qq\\.com/cover/[^/]+/\\w+\\.html\\?vid=(?'id'\\w+)!",
+                        "!qq\\.com/x/page/(?'id'\\w+)\\.html!",
+                        "!qq\\.com/page/[^/]+/[^/]+/[^/]+/(?'id'\\w+)\\.html!"
+                    ],
+                    'iframe'  => [
+                        'width'  => 760,
+                        'height' => 450,
+                        'src'    => '//v.qq.com/txp/iframe/player.html?vid={@id}&tiny=0&auto=0'
                     ]
                 ]
             );

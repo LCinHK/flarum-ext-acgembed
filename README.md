@@ -54,6 +54,20 @@ PS: Remember to replace sm8628149 into the smid that you are posting
 Added http://acg.tv/sm8628149, http://acg.tv/ac12809987, http://acg.tv/av12450 
 ```
 ## v0.3.1↑
+## v0.4+BVid and v.qq.com↓
+添加了对BV号和腾讯视频的支持
+```
+BVid: Post as https://www.bilibili.com/video/BV18x411c7xA or https://b23.tv/BV18x411c7xA 
+以https://www.bilibili.com/video/BV18x411c7xA 或https://b23.tv/BV18x411c7xA 来发BV号
+v.qq.com 腾讯视频: 
+Post as https://v.qq.com/x/page/q0939xfj0in.html
+以https://v.qq.com/x/page/q0939xfj0in.html 来发腾讯视频
+```
+![腾讯视频](https://i.loli.net/2020/03/25/BglhCQUoD1d4Zvj.png)
+PS: - acg.tv does not support BVid
+    - acg.tv不支持BV号
+  
+## v0.4↑
 ### Installation
 composer:
 
