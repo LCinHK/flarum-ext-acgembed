@@ -79,7 +79,7 @@ composer require lcinhk/flarum-ext-acgembed
 ```sh
 composer update lcinhk/flarum-ext-acgembed
 ```
-And clear the cache(`php flarum cache:clear` or clear from the admin panel)
+And clear the cache(`php flarum cache:clear` or clear from the admin panel)  
 然后清除缓存(`php flarum cache:clear` 或从管理面板清除)
 ### Sponsor
 - from Mainland China  
