@@ -63,7 +63,7 @@ v.qq.com 腾讯视频:
 Post as https://v.qq.com/x/page/q0939xfj0in.html
 以https://v.qq.com/x/page/q0939xfj0in.html 来发腾讯视频
 ```
-![腾讯视频](https://i.loli.net/2020/03/25/BglhCQUoD1d4Zvj.png)
+![腾讯视频](https://i.loli.net/2020/03/25/BglhCQUoD1d4Zvj.png)  
 PS: - acg.tv does not support BVid
     - acg.tv不支持BV号
   
