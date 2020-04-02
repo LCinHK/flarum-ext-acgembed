@@ -17,6 +17,17 @@ return [
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->MediaEmbed->add(
+                'xiami',
+                [
+                    'host'	  => 'xiami.com',
+                    'extract' => "!xiami\.com/song/(?'xmid'[-0-9]+)!",
+                    'iframe' => [
+                        'height' => 145,
+                        'src'  => '//www.xiami.com/webapp/embed-player?autoPlay=1&id={@xmid}',
+                    ]
+                ]
+            );
+            $config->MediaEmbed->add(
                 'music163',
                 [
                     'host'    => 'music.163.com',
@@ -26,24 +37,19 @@ return [
                             [
                                 'test' => '@mode = \'album\'',
                                 'iframe'  => [
-                                    'width'  => 380,
-                                    'height' => 450,
                                     'src'    => '//music.163.com/outchain/player?type=1&id={@id}&auto=0&height=450'
                                 ]
                             ],
                             [
                                 'test' => '@mode = \'song\'',
                                 'iframe'  => [
-                                    'width'  => 380,
-                                    'height' => 86,
+                                    'height' => 121,
                                     'src'    => '//music.163.com/outchain/player?type=2&id={@id}&auto=0&height=66'
                                 ]
                             ]
                         ],
                         'otherwise' => [
                             'iframe'  => [
-                                'width'  => 380,
-                                'height' => 450,
                                 'src'    => '//music.163.com/outchain/player?type=0&id={@id}&auto=0&height=450'
                             ]
                         ]

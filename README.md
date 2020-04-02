@@ -1,9 +1,9 @@
-# v0.3
+# v0.5
 ### Acgembed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/lcinhk/flarum-ext-acgembed.svg)](https://packagist.org/packages/lcinhk/flarum-ext-acgembed)
 
-A [Flarum](http://flarum.org) extension. Add [Niconico](https://www.nicovideo.jp)/[ACFUN](https://www.acfun.cn)/[Bilibili](https://www.bilibili.com) and [Netease cloud music](https://music.163.com) in mediaembed
+A [Flarum](http://flarum.org) extension. Add [Niconico](https://www.nicovideo.jp), [ACFUN](https://www.acfun.cn), [Bilibili](https://www.bilibili.com), [Xiami music](https://www.xiami.com), [Netease cloud music](https://music.163.com) in mediaembed
 ## v0.1[ACFUN](https://www.acfun.cn) and [Bilibili](https://www.bilibili.com)↓
 ### ACFUN
 ```
@@ -74,7 +74,16 @@ composer:
 ```sh
 composer require lcinhk/flarum-ext-acgembed
 ```
-
+## v0.5+Xiami music and small improvement↓
+添加了对虾米音乐的支持以及小调整
+```
+Number id only仅限数字id
+https://www.xiami.com/song/1772119304
+```
+![xiami](https://i.loli.net/2020/04/02/7wjnSQK8ExCHPof.png)
+Small improvement: Auto adjustment slightly changed
+小调整：微调了一下自适应
+## v0.5↑
 ### Updating
 ```sh
 composer update lcinhk/flarum-ext-acgembed
