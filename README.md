@@ -95,6 +95,7 @@ And clear the cache(`php flarum cache:clear` or clear from the admin panel)
 ![云闪付/京东支付/AlipayHK/支付宝/微信](https://i.loli.net/2020/02/16/psaBu6RIWlfLvY7.png)
 - from HKSAR  
 ![FPS(轉數快)](https://i.loli.net/2020/02/24/TrR8ZY2VsthAmUl.png)
+Thanks!谢谢！
 ### Links
 Inspired by [flarum-bbcode-bilibili](https://github.com/pluveto/flarum-bbcode-bilibili) and [flarum-ext-mediaembed-pro](https://github.com/FlarumChina/flarum-ext-mediaembed-pro)
 - [Packagist](https://packagist.org/packages/lcinhk/flarum-ext-acgembed)
