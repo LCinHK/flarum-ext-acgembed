@@ -54,7 +54,7 @@ PS: Remember to replace sm8628149 into the smid that you are posting
 Added http://acg.tv/sm8628149, http://acg.tv/ac12809987, http://acg.tv/av12450 
 ```
 ## v0.3.1↑
-## v0.4+BVid and v.qq.com↓
+## v0.4+BVid and [v.qq.com](https://v.qq.com)↓
 添加了对BV号和腾讯视频的支持
 ```
 BVid: Post as https://www.bilibili.com/video/BV18x411c7xA or https://b23.tv/BV18x411c7xA 
@@ -74,7 +74,7 @@ composer:
 ```sh
 composer require lcinhk/flarum-ext-acgembed
 ```
-## v0.5+Xiami music and small improvement↓
+## v0.5+[Xiami music](https://www.xiami.com) and small improvement↓
 添加了对虾米音乐的支持以及小调整
 ```
 Number id only仅限数字id
