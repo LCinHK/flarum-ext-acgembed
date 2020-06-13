@@ -22,7 +22,7 @@ return [
                     'host'	  => 'xiami.com',
                     'extract' => "!xiami\.com/song/(?'xmid'[-0-9]+)!",
                     'iframe' => [
-                        'height' => 145,
+                        'height' => 170,
                         'src'  => '//www.xiami.com/webapp/embed-player?autoPlay=1&id={@xmid}',
                     ]
                 ]
@@ -43,7 +43,7 @@ return [
                             [
                                 'test' => '@mode = \'song\'',
                                 'iframe'  => [
-                                    'height' => 121,
+                                    'height' => 155,
                                     'src'    => '//music.163.com/outchain/player?type=2&id={@id}&auto=0&height=66'
                                 ]
                             ]
@@ -75,7 +75,7 @@ return [
 						"!b23\.tv/(/av(?'aid'[-0-9]+))|(/BV(?'bvid'[-0-9A-Z_a-z]+))(/p(?'pn'[-0-9]+))?!"
 					],
 					'iframe' => [
-						'src'  => '//player.bilibili.com/player.html?aid={@aid}&bvid={@bvid}&page={@pn}'
+						'src'  => '//player.bilibili.com/player.html?aid={@aid}&bvid=BV{@bvid}&page={@pn}'
 					]
 				]
 			);

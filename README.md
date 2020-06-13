@@ -1,4 +1,4 @@
-# v0.5
+# v0.5.1
 ### Acgembed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/lcinhk/flarum-ext-acgembed.svg)](https://packagist.org/packages/lcinhk/flarum-ext-acgembed)
@@ -25,68 +25,25 @@ PS: Remember to replace ac12809987 and av12450 into the ac/av id that you are po
 https://imgur.com/SCYqKOT
 
 ## v0.1↑
-## v0.2+[Netease cloud music (网易云音乐)](https://music.163.com)↓
-直接用分享出来的链接发即可  
-Just use the link.
-```
-https://music.163.com/#/song?id=1304754139
-```
-![image.png](https://i.loli.net/2020/02/23/OebL9lnymQJjqGg.png)
+## [v0.2](https://github.com/LCinHK/flarum-ext-acgembed/releases/tag/v0.2)  
 
-## v0.2↑
-## v0.3+[Niconico](https://www.nicovideo.jp)↓ 
-```
-以https://nico.ms/sm8628149
-Post as https://nico.ms/sm8628149
-或https://www.nicovideo.jp/watch/sm8628149
-Or as https://www.nicovideo.jp/watch/sm8628149
-来发Niconico视频
-to post Niconico videos
-```
-注：教程以sm8628149为例，请换成具体要发视频的sm号  
-PS: Remember to replace sm8628149 into the smid that you are posting
-![niconico](https://i.loli.net/2020/03/07/TidMqfQLxIDGA7S.png)  
+## [v0.3](https://github.com/LCinHK/flarum-ext-acgembed/releases/tag/v0.3)  
 
-## v0.3↑ 
-## v0.3.1+"acg.tv" enhanced for Niconico/ACFUN/Bilibili↓
-添加了"acg.tv"对Niconico/ACFUN/Bilibili的支持
-```
-Added http://acg.tv/sm8628149, http://acg.tv/ac12809987, http://acg.tv/av12450 
-```
-## v0.3.1↑
-## v0.4+BVid and [v.qq.com](https://v.qq.com)↓
-添加了对BV号和腾讯视频的支持
-```
-BVid: Post as https://www.bilibili.com/video/BV18x411c7xA or https://b23.tv/BV18x411c7xA 
-以https://www.bilibili.com/video/BV18x411c7xA 或https://b23.tv/BV18x411c7xA 来发BV号
-v.qq.com 腾讯视频: 
-Post as https://v.qq.com/x/page/q0939xfj0in.html
-以https://v.qq.com/x/page/q0939xfj0in.html 来发腾讯视频
-```
-![腾讯视频](https://i.loli.net/2020/03/25/BglhCQUoD1d4Zvj.png)  
-PS: - acg.tv does not support BVid
-    - acg.tv不支持BV号
-  
-## v0.4↑
+## [v0.3.1](https://github.com/LCinHK/flarum-ext-acgembed/releases/tag/v0.3.1)
+
+## [v0.4](https://github.com/LCinHK/flarum-ext-acgembed/releases/tag/v0.4)
+## [v0.5](https://github.com/LCinHK/flarum-ext-acgembed/releases/tag/v0.5)
+
 ### Installation
 composer:
 
 ```sh
 composer require lcinhk/flarum-ext-acgembed
 ```
-## v0.5+[Xiami music](https://www.xiami.com) and small improvement↓
-添加了对虾米音乐的支持以及小调整
-```
-Number id only仅限数字id
-https://www.xiami.com/song/1772119304
-```
-![xiami](https://i.loli.net/2020/04/02/7wjnSQK8ExCHPof.png)
-Small improvement: Auto adjustment slightly changed
-小调整：微调了一下自适应
-## v0.5↑
+
 ### Updating
 ```sh
-composer update lcinhk/flarum-ext-acgembed
+composer require lcinhk/flarum-ext-acgembed
 ```
 And clear the cache(`php flarum cache:clear` or clear from the admin panel)  
 然后清除缓存(`php flarum cache:clear` 或从管理面板清除)
