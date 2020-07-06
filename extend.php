@@ -75,7 +75,7 @@ return [
 						"!b23\.tv/(/av(?'aid'[-0-9]+))|(/BV(?'bvid'[-0-9A-Z_a-z]+))(/p(?'pn'[-0-9]+))?!"
 					],
 					'iframe' => [
-						'src'  => '//player.bilibili.com/player.html?aid={@aid}&bvid=BV{@bvid}&page={@pn}'
+						'src'  => '//player.bilibili.com/player.html?aid={@aid}&bvid={@bvid}&page={@pn}'
 					]
 				]
 			);
