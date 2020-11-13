@@ -1,9 +1,9 @@
-# v0.5.1
+# v0.5.2 
 ### Acgembed
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/lcinhk/flarum-ext-acgembed.svg)](https://packagist.org/packages/lcinhk/flarum-ext-acgembed)
 
-A [Flarum](http://flarum.org) extension. Add [Niconico](https://www.nicovideo.jp), [ACFUN](https://www.acfun.cn), [Bilibili](https://www.bilibili.com), [Xiami music](https://www.xiami.com), [Netease cloud music](https://music.163.com) in mediaembed
+A [Flarum](http://flarum.org) extension**(Not yet tested with beta14)**. Add [Niconico](https://www.nicovideo.jp), [ACFUN](https://www.acfun.cn), [Bilibili](https://www.bilibili.com), [Xiami music](https://www.xiami.com), [Netease cloud music](https://music.163.com) in mediaembed
 ## v0.1[ACFUN](https://www.acfun.cn) and [Bilibili](https://www.bilibili.com)↓
 ### ACFUN
 ```
